@@ -95,7 +95,8 @@ export default {
                     }
                     .progress-wrap {
                         height: 32px;
-                        line-height: 32px;
+                        display: flex;
+                        align-items: center;
                         .inner {
                             display: inline-block;
                             height: 12px;

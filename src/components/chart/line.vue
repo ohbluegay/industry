@@ -58,7 +58,6 @@ export default {
                 },
                 xAxis: {
                     type: 'category',
-                    boundaryGap: false,
                     axisLine: {
                         symbol: 'none',
                         lineStyle: {
@@ -127,6 +126,7 @@ export default {
                 }
                 if (area && area.includes(item)) {
                     const rgba = rgbColor(this.colorList[index])
+                    chartOptions.xAxis.boundaryGap = false
                     obj.showSymbol = false
                     obj.color = `rgba(${rgba[0]}, ${rgba[1]}, ${rgba[2]}, .5)`
                     obj.areaStyle = {
