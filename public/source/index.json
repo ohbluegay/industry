@@ -1,0 +1,152 @@
+{
+    "100000": [{
+            "name": "北京市",
+            "adcode": 110000,
+            "enterNum": 34
+        },
+        {
+            "name": "天津市",
+            "adcode": 120000,
+            "enterNum": 8
+        },
+        {
+            "name": "河北省",
+            "adcode": 130000,
+            "enterNum": 5
+        },
+        {
+            "name": "山西省",
+            "adcode": 140000,
+            "enterNum": 4
+        },
+        {
+            "name": "内蒙古自治区",
+            "adcode": 150000,
+            "enterNum": 1
+        },
+        {
+            "name": "辽宁省",
+            "adcode": 210000,
+            "enterNum": 5
+        },
+        {
+            "name": "吉林省",
+            "adcode": 220000,
+            "enterNum": 3
+        },
+        {
+            "name": "黑龙江省",
+            "adcode": 230000,
+            "enterNum": 6
+        },
+        {
+            "name": "上海市",
+            "adcode": 310000,
+            "enterNum": 28
+        },
+        {
+            "name": "江苏省",
+            "enterNum": 20
+        },
+        {
+            "name": "浙江省",
+            "enterNum": 18
+        },
+        {
+            "name": "安徽省",
+            "enterNum": 11
+        },
+        {
+            "name": "福建省",
+            "enterNum": 15
+        },
+        {
+            "name": "江西省",
+            "enterNum": 9
+        },
+        {
+            "name": "山东省",
+            "enterNum": 19
+        },
+        {
+            "name": "河南省",
+            "enterNum": 8
+        },
+        {
+            "name": "湖北省",
+            "enterNum": 11
+        },
+        {
+            "name": "湖南省",
+            "enterNum": 9
+        },
+        {
+            "name": "广东省",
+            "enterNum": 24
+        },
+        {
+            "name": "广西壮族自治区",
+            "enterNum": 1
+        },
+        {
+            "name": "海南省",
+            "enterNum": 1
+        },
+        {
+            "name": "重庆市",
+            "enterNum": 6
+        },
+        {
+            "name": "四川省",
+            "enterNum": 11
+        },
+        {
+            "name": "贵州省",
+            "enterNum": 3
+        },
+        {
+            "name": "云南省",
+            "enterNum": 1
+        },
+        {
+            "name": "西藏自治区",
+            "enterNum": 1
+        },
+        {
+            "name": "陕西省",
+            "enterNum": 5
+        },
+        {
+            "name": "甘肃省",
+            "enterNum": 2
+        },
+        {
+            "name": "青海省",
+            "enterNum": 0
+        },
+        {
+            "name": "宁夏回族自治区",
+            "enterNum": 0
+        },
+        {
+            "name": "新疆维吾尔自治区",
+            "enterNum": 2
+        },
+        {
+            "name": "台湾省",
+            "enterNum": 21
+        },
+        {
+            "name": "香港特别行政区",
+            "enterNum": 7
+        },
+        {
+            "name": "澳门特别行政区",
+            "enterNum": 5
+        },
+        {
+            "name": "南海诸岛",
+            "enterNum": 0
+        }
+    ]
+}

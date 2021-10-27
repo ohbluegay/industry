@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>行业舆情</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.345098 0 0 0 0 0.870588 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-message" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="原型3" transform="translate(-84.000000, -35.000000)">
+            <g id="编组" transform="translate(84.000000, 30.000000)">
+                <g id="行业舆情" transform="translate(0.000000, 5.000000)" filter="url(#filter-1)">
+                    <g>
+                        <path d="M13,1.5 C13.4142136,1.5 13.7892136,1.66789322 14.0606602,1.93933983 C14.3321068,2.21078644 14.5,2.58578644 14.5,3 L14.5,3 L14.5,11.110517 C14.5,11.5247305 14.3321068,11.8997305 14.0606602,12.1711771 C13.7892136,12.4426238 13.4142136,12.610517 13,12.610517 L13,12.610517 L11.2849784,12.610517 L10.6526181,14.3166378 L8.31369585,12.610517 L3,12.610517 C2.58578644,12.610517 2.21078644,12.4426238 1.93933983,12.1711771 C1.66789322,11.8997305 1.5,11.5247305 1.5,11.110517 L1.5,11.110517 L1.5,3 C1.5,2.58578644 1.66789322,2.21078644 1.93933983,1.93933983 C2.21078644,1.66789322 2.58578644,1.5 3,1.5 L3,1.5 Z" id="矩形" stroke="#303133"></path>
+                        <rect id="矩形" fill="#303133" x="4" y="5" width="4" height="1" rx="0.5"></rect>
+                        <rect id="矩形" fill="#303133" x="4" y="8" width="8" height="1" rx="0.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

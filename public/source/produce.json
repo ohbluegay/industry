@@ -1,0 +1,65 @@
+[
+    {
+        "name": "新一代信息技术",
+        "number": 64,
+        "service": 2654,
+        "enter": 8432,
+        "produce": 13796.4
+    },
+    {
+        "name": "高端制造",
+        "number": 45,
+        "service": 3287,
+        "enter": 10245,
+        "produce": 35067.9
+    },
+    {
+        "name": "新材料产业",
+        "number": 65,
+        "service": 3467,
+        "enter": 4224,
+        "produce": 13497.6
+    },
+    {
+        "name": "生物产业",
+        "number": 78,
+        "service": 4563,
+        "enter": 12456,
+        "produce": 18796.5
+    },
+    {
+        "name": "新能源汽车",
+        "number": 33,
+        "service": 1756,
+        "enter": 6545,
+        "produce": 17364.8
+    },
+    {
+        "name": "新能源产业",
+        "number": 46,
+        "service": 2456,
+        "enter": 4357,
+        "produce": 24563.7
+    },
+    {
+        "name": "节能环保",
+        "number": 36,
+        "service": 2543,
+        "enter": 6784,
+        "produce": 8739.8
+    },
+    {
+        "name": "数字创意",
+        "number": 37,
+        "service": 1456,
+        "enter": 3523,
+        "produce": 9974.6
+    },
+    {
+        "name": "相关服务",
+        "number": 16,
+        "service": 1865,
+        "enter": 2967,
+        "produce": 7867.2
+    }
+]
