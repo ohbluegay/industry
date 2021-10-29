@@ -1,13 +1,15 @@
 <template>
     <div class="industry">
         <div class="in-header">
-            <el-input prefix-icon="el-icon-search" placeholder="请输入新兴产业名称">
+            <el-input v-model="indestry" prefix-icon="el-icon-search" placeholder="请输入新兴产业名称">
                 <template slot="append"><span>搜索</span></template>
             </el-input>
         </div>
         <div class="in-content">
             <header-tab :tabList="tabList" type="header" @chooseTab="chooseTab" />
-            <component :is="componentName" />
+            <keep-alive>
+                <component :is="componentName" />
+            </keep-alive>
         </div>
     </div>
 </template>
@@ -28,7 +30,8 @@ export default {
                     value: 'plate'
                 }
             ],
-            componentName: 'panorama'
+            componentName: 'panorama',
+            indestry: ''
         }
     },
     components: {
@@ -54,9 +57,10 @@ export default {
             /deep/.el-input {
                 width: 700px;
                 height: 32px;
-                font-size: 12px;
+                font-size: 14px;
                 .el-input__icon {
                     line-height: 32px;
+                    font-size: 16px;
                 }
                 .el-input__inner {
                     height: 32px;
@@ -64,7 +68,7 @@ export default {
                     color: rgba(48, 49, 51, 1);
                 }
                 .el-input-group__append {
-                    border-radius: 2px;
+                    border-radius: 0 2px 2px 0;
                     background-color: rgba(50, 88, 222, 1);
                     color: #ffffff;
                     border: 0;

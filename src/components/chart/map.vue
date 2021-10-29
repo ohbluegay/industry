@@ -10,9 +10,7 @@ export default {
             chartOptions: {
                 grid: {
                     top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0
+                    bottom: 0
                 },
                 tooltip: {
                     trigger: 'item',
@@ -24,7 +22,10 @@ export default {
                         lineHeight: 42
                     },
                     extraCssText: 'border-radius: 2px;',
-                    formatter: '{b} {c}'
+                    formatter: params => {
+                        const { name, value } = params
+                        return `<span style="display:inline-block;margin-right:4px;border-radius:4px;width:8px;height:8px;background-color: rgba(255, 142, 13, 1);"></span><span>${name}</span><span style="margin-left: 30px;">${value}</span>`
+                    }
                 },
                 visualMap: {
                     left: 'left',
@@ -42,6 +43,8 @@ export default {
                 series: [
                     {
                         type: 'map',
+                        top: 10,
+                        bottom: 40,
                         emphasis: {
                             label: false,
                             itemStyle: {

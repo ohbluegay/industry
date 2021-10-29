@@ -5,10 +5,10 @@
       <div
         class="listitem"
         v-for="item in list"
-        :key="item.name"
-        @click="chooseItem(item.name)"
+        :key="item.label"
+        @click="chooseItem(item.label)"
       >
-        <span class="name">{{ item.name }}</span>
+        <span class="name">{{ item.label }}</span>
         <span class="value">{{ item.value }}</span>
       </div>
     </div>

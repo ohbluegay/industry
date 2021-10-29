@@ -118,7 +118,7 @@ export default {
                     font-size: 14px;
                     display: flex;
                     align-items: center;
-                    padding: 0 8px;
+                    padding: 0 8px 1px 8px;
                     &:not(:first-child) {
                         margin-left: 12px;
                     }
@@ -131,6 +131,24 @@ export default {
             }
             &.lefttab {
                 justify-content: flex-start;
+            }
+        }
+        .little {
+            font-size: 14px;
+            .tablist {
+                display: flex;
+                .tabitem {
+                    color: #303133;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid transparent;
+                    &:hover, &.active {
+                        color: #3258DE;
+                        border-color: #3258DE;
+                    }
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+                }
             }
         }
     }

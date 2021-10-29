@@ -13,7 +13,9 @@
             <div class="innertab">
                 <instab type="inner lefttab" :tabList="tabList" @chooseTab="chooseTab" :defaultValue="active" />
             </div>
-            <component :is="active" />
+            <keep-alive>
+                <component :is="active" />
+            </keep-alive>
         </div>
     </div>
 </template>
@@ -29,7 +31,7 @@ export default {
                 { name: '产业图谱', value: 'atlas' },
                 { name: '产业企业', value: 'enter' }
             ],
-            active: 'atlas'
+            active: 'enter'
         }
     },
     components: {

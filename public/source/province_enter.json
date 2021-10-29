@@ -1,162 +1,167 @@
 [
     {
-        "province": "河北省",
-        "num": 159,
+        "name": "广东省",
+        "value": 159,
         "percent": "6.41%"
     },
     {
-        "province": "山西省",
-        "num": 154,
-        "percent": "6.63%"
+        "name": "江苏省",
+        "value": 154,
+        "percent": "6.20%"
     },
     {
-        "province": "辽宁省",
-        "num": 150,
-        "percent": "6.92%"
+        "name": "辽宁省",
+        "value": 150,
+        "percent": "6.04%"
     },
     {
-        "province": "吉林省",
-        "num": 148,
-        "percent": "7.33%"
+        "name": "浙江省",
+        "value": 148,
+        "percent": "5.96%"
     },
     {
-        "province": "黑龙江省",
-        "num": 140,
-        "percent": "7.48%"
+        "name": "山东省",
+        "value": 140,
+        "percent": "5.64%"
     },
     {
-        "province": "江苏省",
-        "num": 125,
-        "percent": "7.22%"
+        "name": "福建省",
+        "value": 125,
+        "percent": "5.04%"
     },
     {
-        "province": "浙江省",
-        "num": 123,
-        "percent": "7.66%"
+        "name": "吉林省",
+        "value": 123,
+        "percent": "4.96%"
     },
     {
-        "province": "安徽省",
-        "num": 119,
-        "percent": "8.02%"
+        "name": "安徽省",
+        "value": 119,
+        "percent": "4.79%"
     },
     {
-        "province": "江西省",
-        "num": 106,
-        "percent": "7.77%"
+        "name": "江西省",
+        "value": 106,
+        "percent": "4.27%"
     },
     {
-        "province": "山东省",
-        "num": 106,
-        "percent": "8.43%"
+        "name": "黑龙江省",
+        "value": 106,
+        "percent": "4.27%"
     },
     {
-        "province": "地图数据",
-        "num": 91,
-        "percent": "7.90%"
+        "name": "河南省",
+        "value": 91,
+        "percent": "3.67%"
     },
     {
-        "province": "湖北省",
-        "num": 79,
-        "percent": "7.45%"
+        "name": "湖北省",
+        "value": 79,
+        "percent": "3.18%"
     },
     {
-        "province": "湖南省",
-        "num": 78,
-        "percent": "7.94%"
+        "name": "湖南省",
+        "value": 78,
+        "percent": "3.14%"
     },
     {
-        "province": "广东省",
-        "num": 76,
-        "percent": "8.41%"
+        "name": "河北省",
+        "value": 76,
+        "percent": "3.06%"
     },
     {
-        "province": "海南省",
-        "num": 73,
-        "percent": "8.82%"
+        "name": "海南省",
+        "value": 73,
+        "percent": "2.94%"
     },
     {
-        "province": "四川省",
-        "num": 73,
-        "percent": "9.67%"
+        "name": "四川省",
+        "value": 73,
+        "percent": "2.94%"
     },
     {
-        "province": "贵州省",
-        "num": 66,
-        "percent": "9.68%"
+        "name": "贵州省",
+        "value": 66,
+        "percent": "2.66%"
     },
     {
-        "province": "云南省",
-        "num": 61,
-        "percent": "9.90%"
+        "name": "云南省",
+        "value": 61,
+        "percent": "2.46%"
     },
     {
-        "province": "陕西省",
-        "num": 55,
-        "percent": "9.91%"
+        "name": "陕西省",
+        "value": 55,
+        "percent": "2.22%"
     },
     {
-        "province": "甘肃省",
-        "num": 53,
-        "percent": "10.60%"
+        "name": "甘肃省",
+        "value": 53,
+        "percent": "2.14%"
     },
     {
-        "province": "青海省",
-        "num": 53,
-        "percent": "11.86%"
+        "name": "青海省",
+        "value": 53,
+        "percent": "2.14%"
     },
     {
-        "province": "台湾省",
-        "num": 51,
-        "percent": "12.94%"
+        "name": "台湾省",
+        "value": 51,
+        "percent": "2.05%"
     },
     {
-        "province": "北京市",
-        "num": 46,
-        "percent": "13.41%"
+        "name": "北京市",
+        "value": 46,
+        "percent": "1.85%"
     },
     {
-        "province": "天津市",
-        "num": 45,
-        "percent": "15.15%"
+        "name": "天津市",
+        "value": 45,
+        "percent": "1.81%"
     },
     {
-        "province": "上海市",
-        "num": 43,
-        "percent": "17.06%"
+        "name": "上海市",
+        "value": 43,
+        "percent": "1.73%"
     },
     {
-        "province": "福建省",
-        "num": 39,
-        "percent": "18.66%"
+        "name": "山西省",
+        "value": 39,
+        "percent": "1.57%"
     },
     {
-        "province": "重庆市",
-        "num": 33,
-        "percent": "19.41%"
+        "name": "重庆市",
+        "value": 33,
+        "percent": "1.33%"
     },
     {
-        "province": "内蒙古自治区",
-        "num": 33,
-        "percent": "24.09%"
+        "name": "内蒙古自治区",
+        "value": 33,
+        "percent": "1.33%"
     },
     {
-        "province": "广西壮族自治区",
-        "num": 30,
-        "percent": "28.85%"
+        "name": "广西壮族自治区",
+        "value": 30,
+        "percent": "1.21%"
     },
     {
-        "province": "西藏自治区",
-        "num": 30,
-        "percent": "40.54%"
+        "name": "西藏自治区",
+        "value": 30,
+        "percent": "1.21%"
     },
     {
-        "province": "宁夏回族自治区",
-        "num": 23,
-        "percent": "52.27%"
+        "name": "宁夏回族自治区",
+        "value": 23,
+        "percent": "0.93%"
     },
     {
-        "province": "新疆维吾尔自治区",
-        "num": 21,
-        "percent": "100.00%"
+        "name": "新疆维吾尔自治区",
+        "value": 21,
+        "percent": "0.85%"
+    },
+    {
+        "name": "南海诸岛",
+        "value": 0,
+        "percent": "0%"
     }
 ]
