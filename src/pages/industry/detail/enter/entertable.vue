@@ -83,7 +83,7 @@ export default {
         },
         // 跳转到智眸
         toZhimou(field, code) {
-            if (field !== 'entername') return
+            if (field !== 'entername' || !code) return
             window.open(`https://zhimou.gildata.com/#/subjectPortrait/corporateOverview/${code}`)
         }
     }

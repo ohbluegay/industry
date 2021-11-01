@@ -222,7 +222,7 @@ export default {
                 // 注册时间
                 if (time) {
                     let bool = false
-                    const itemFormat = item.time.replace(/年|月|日/g, '-')
+                    const itemFormat = item.time.replace(/年|月/g, '-').replace('日', '')
                     if (time.includes('-')) {
                         const range = time.split('-')
                         bool = this.toStamp(itemFormat) > this.toStamp(this.$moment().subtract(range[1], 'years').format('YYYY-MM-DD')) && this.toStamp(itemFormat) <= this.toStamp(this.$moment().subtract(range[0], 'years').format('YYYY-MM-DD'))

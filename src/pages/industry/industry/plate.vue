@@ -3,7 +3,7 @@
     <div class="platetop">
       <instab type="inner" :tabList="tabList" :defaultValue="active" @chooseTab="chooseTab" />
       <div class="platecontent" :style="{'padding-left': renderSize(120), 'padding-right': renderSize(80)}">
-          <div class="resultitem" v-for="(item, index) in resultList" :key="index" :style="{'width': renderSize(250), 'height': renderSize(120), 'margin-right': renderSize(40)}">
+          <div class="resultitem" @click="enterDetail(item.name)" v-for="(item, index) in resultList" :key="index" :style="{'width': renderSize(250), 'height': renderSize(120), 'margin-right': renderSize(40)}">
               <img :src="imgPath[index]" />
               <span>{{item.name}}</span>
           </div>
@@ -60,6 +60,9 @@ export default {
       getSource({ source: 'plate' }).then(res => {
         this.resultList = res[val]
       })
+    },
+    enterDetail(name) {
+      if (name === '电子核心产业') this.$router.push('/industry/detail')
     }
   },
   created() {
