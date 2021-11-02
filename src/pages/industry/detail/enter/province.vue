@@ -7,6 +7,7 @@
             </div>
             <div class="mapwrap">
                 <geomap
+                    ref="map"
                     mapName="china"
                     :geolocation="geolocation"
                     :data="enterList"
@@ -71,6 +72,9 @@ export default {
             getMapGeo({ code }).then((res) => {
                 this.geolocation = res;
             });
+        },
+        resizeMap() {
+            this.$refs.map.resize()
         }
     },
     created() {
@@ -100,14 +104,13 @@ export default {
             }
             .mapwrap {
                 width: 460px;
-                height: 400px;
+                height: 420px;
             }
         }
         .enterrank {
             width: 300px;
             font-size: 12px;
             color: rgba(96, 98, 102, 1);
-            line-height: 32px;
             .left {
                 text-align: left;
             }
@@ -120,8 +123,10 @@ export default {
                 border: 1px solid rgba(214, 222, 248, 1);
                 display: flex;
                 padding: 0 32px;
+                line-height: 32px;
             }
             .enterbody {
+                line-height: 36px;
                 .tr {
                     padding: 0 32px;
                     display: flex;

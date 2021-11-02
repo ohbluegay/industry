@@ -14,7 +14,7 @@
                 <instab type="inner lefttab" :tabList="tabList" @chooseTab="chooseTab" :defaultValue="active" />
             </div>
             <keep-alive>
-                <component :is="active" />
+                <component :is="active" ref="child" />
             </keep-alive>
         </div>
     </div>
@@ -31,7 +31,7 @@ export default {
                 { name: '产业图谱', value: 'atlas' },
                 { name: '产业企业', value: 'enter' }
             ],
-            active: 'enter'
+            active: 'atlas'
         }
     },
     components: {
@@ -42,6 +42,12 @@ export default {
     methods: {
         chooseTab(val) {
             this.active = val
+        },
+        searchChild(val) {
+            this.active = 'enter'
+            this.$nextTick(() => {
+                this.$refs.child.searchByLink(val)
+            })
         }
     },
     created() {

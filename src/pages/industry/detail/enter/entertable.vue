@@ -124,7 +124,7 @@ export default {
             color: #606266;
         }
         .tablebody {
-            max-height: 400px;
+            height: 437px;
             overflow: auto;
             color: #303133;
             .active {

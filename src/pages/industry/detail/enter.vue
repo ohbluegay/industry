@@ -57,11 +57,11 @@
         </div>
         <div class="entercontent">
             <div class="entertab">
-                <instab :tabList="tabList" :defaultValue="enterShow" type="little" @chooseTab="chooseTab" />
+                <instab ref="instab" :tabList="tabList" :defaultValue="enterShow" type="little" @chooseTab="chooseTab" />
             </div>
             <div class="enterinner">
                 <keep-alive>
-                    <component :is="enterShow" :tableData="tableList" />
+                    <component :is="enterShow" :tableData="tableList" ref="child" />
                 </keep-alive>
             </div>
         </div>
@@ -107,7 +107,7 @@ export default {
             label: {
                 recom: '客群选择',
                 link: '产业环节',
-                state: '省份地域',
+                state: '公司地址',
                 register: '注册资本',
                 time: '注册时间'
             },
@@ -115,7 +115,7 @@ export default {
                 { name: '列表', value: 'entertable' },
                 { name: '地图', value: 'province' }
             ],
-            enterShow: 'province',
+            enterShow: 'entertable',
             showTip: false
         }
     },
@@ -193,13 +193,17 @@ export default {
          * 搜索企业
          */
         searchEnter() {
+            if (this.enterShow === 'province') {
+                this.enterShow = 'entertable'
+                this.$refs.instab.active = 'entertable'
+            }
             const { recom, link, state, register, time } = this.form
             this.tableList = this.enterList.filter(item => {
                 // 客群选择
                 if (recom && !item.recom) return false
                 // 产业环节
                 if (link && item.link !== link) return false
-                // 省份地域
+                // 公司地址
                 if (state.length) {
                     let bool = false
                     state.map(sub => {
@@ -239,6 +243,22 @@ export default {
          */
         chooseTab(val) {
             this.enterShow = val
+            if (val === 'province') {
+                this.$nextTick(() => this.$refs.child.resizeMap())
+            }
+        },
+        /**
+         * 定向选择产业环节查询
+         */
+        searchByLink(val) {
+            this.form = {
+                recom: 0,
+                link: val,
+                state: [],
+                register: 0,
+                time: 0
+            }
+            this.searchEnter()
         }
     },
     created() {

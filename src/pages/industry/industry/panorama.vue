@@ -43,16 +43,15 @@
               :mapName="mapName"
               :geolocation="geolocation"
               :data="mapData"
-              @mapClick="mapClick"
             />
-            <el-button
+            <!-- <el-button
               type="primary"
               icon="el-icon-arrow-left"
               size="small"
               @click="parentMap()"
               v-show="!!parentCode"
               >返回上一级</el-button
-            >
+            > -->
           </div>
         </div>
         <div class="pa-content-c-bottom">

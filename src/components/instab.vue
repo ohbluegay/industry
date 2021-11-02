@@ -28,6 +28,9 @@ export default {
         }
     },
     watch: {
+        defaultValue(val) {
+            this.active = val
+        },
         tabList: {
             handler(val) {
                 if (this.defaultValue) return this.active = this.defaultValue

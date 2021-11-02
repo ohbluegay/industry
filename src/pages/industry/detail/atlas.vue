@@ -1,63 +1,59 @@
 <template>
     <div class="atlas">
-        <div class="list">
-            <enterlist title="上游产业" :list="linkSource.type1" />
-        </div>
-        <div class="arrow"><svg-icon iconName="next" /></div>
-        <div class="list">
-            <enterlist title="中游产业" :list="linkSource.type2" />
-        </div>
-        <div class="arrow"><svg-icon iconName="next" /></div>
-        <div class="list">
-            <enterlist title="下游产业" :list="linkSource.type3" />
+        <div class="atlas-content" @click="linkSearch('EDA软件')">
+            <div class="atlas-lines" />
+            <div class="atlas-tabs">
+
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-import enterlist from 'components/enterlist'
-import { getSource } from 'utils/api/source'
-import { formatEnter } from 'utils'
 export default {
     data() {
         return {
-            linkSource: {
-                type1: [],
-                type2: [],
-                type3: []
-            }
+            
         }
     },
-    components: {
-        enterlist
-    },
     methods: {
-        getAtlas() {
-            getSource({ source: 'enter' }).then(res => {
-                this.linkSource = formatEnter(res)
-            })
+        resize() {
+
+        },
+        linkSearch(val) {
+            this.$parent.searchChild(val)
         }
     },
     created() {
-        this.getAtlas()
+        window.addEventListener('resize', () => {
+            this.resize()
+        })
+        this.resize()
+    },
+    beforeDestroy() {
+        window.removeEventListener('resize', () => {
+            this.resize()
+        })
     }
 }
 </script>
 
 <style lang="less" scoped>
     .atlas {
-        display: flex;
-        justify-content: space-between;
-        .list {
-            width: 280px;
-        }
-        .arrow {
-            width: 48px;
-            display: flex;
-            align-items: center;
-            svg {
-                width: 48px;
-                height: 40px;
+        .atlas-content {
+            height: 500px;
+            background: url(../../../assets/net.png) no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            .atlas-lines {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url('../../../assets/dianzi.png') no-repeat;
+                background-size: 100% 100%;
+                z-index: 1;
             }
         }
     }

@@ -24,6 +24,7 @@ export default {
                     extraCssText: 'border-radius: 2px;',
                     formatter: params => {
                         const { name, value } = params
+                        if (name === '南海诸岛') return `<span style="display:inline-block;margin-right:4px;border-radius:4px;width:8px;height:8px;background-color: rgba(255, 142, 13, 1);"></span><span>${name}</span>`
                         return `<span style="display:inline-block;margin-right:4px;border-radius:4px;width:8px;height:8px;background-color: rgba(255, 142, 13, 1);"></span><span>${name}</span><span style="margin-left: 30px;">${value}</span>`
                     }
                 },
@@ -43,8 +44,8 @@ export default {
                 series: [
                     {
                         type: 'map',
-                        top: 10,
-                        bottom: 40,
+                        top: 20,
+                        bottom: 50,
                         emphasis: {
                             label: false,
                             itemStyle: {
