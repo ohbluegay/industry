@@ -104,7 +104,7 @@ export default {
                         color: '#303133',
                         fontSize: 14
                     },
-                    left: 0,
+                    left: 13,
                     top: 0
                 }
             }

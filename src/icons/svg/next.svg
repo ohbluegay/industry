@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>形状</title>
     <g id="页面-next" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="原型3" transform="translate(-416.000000, -284.000000)" fill="#FEC53B" fill-rule="nonzero">
             <path d="M440,312.69697 L425.090909,327.606061 L420,322.515152 L440,302.515152 L460,322.515152 L454.909091,327.606061 L440,312.69697 Z M440,290.878788 L425.090909,305.787879 L420,300.333333 L440,280.333333 L460,300.333333 L454.909091,305.424242 L440,290.878788 Z" id="形状" transform="translate(440.000000, 303.969697) rotate(-270.000000) translate(-440.000000, -303.969697) "></path>

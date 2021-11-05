@@ -43,6 +43,10 @@
               :mapName="mapName"
               :geolocation="geolocation"
               :data="mapData"
+              :mapGrid="{
+                top: 10,
+                bottom: 20
+              }"
             />
             <!-- <el-button
               type="primary"
@@ -168,7 +172,7 @@ export default {
           },
           rightAxis: ["gb"],
           xAxis: "date",
-          legend: ["参数1", "参数2"],
+          legend: ["新增企业数量", "新增企业成长率"],
         },
         data: [
           { date: "2019Q4", ga: 18, gb: 45 },
@@ -383,8 +387,9 @@ export default {
         margin-top: 20px;
         & > .chart {
           flex: 1;
+          min-width: 150px;
           &:not(:first-child) {
-            margin-left: 20px;
+            margin-left: 10px;
           }
         }
       }

@@ -258,6 +258,7 @@ export default {
                 register: 0,
                 time: 0
             }
+            document.documentElement.scrollTop = 0
             this.searchEnter()
         }
     },

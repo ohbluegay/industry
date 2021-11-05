@@ -74,7 +74,8 @@ export default {
         mapName: {
             type: String,
             default: 'china'
-        }
+        },
+        mapGrid: Object
     },
     watch: {
         geolocation: {
@@ -97,6 +98,11 @@ export default {
             this.chartOptions.visualMap.max = this.data.length > 0 ? Math.max(...this.data.map(item => item.value)) : 0
             this.chartOptions.series[0].map = this.mapName
             this.chartOptions.series[0].data = this.data
+            if (this.mapGrid && this.mapGrid.top && this.mapGrid.bottom) {
+                const { top, bottom } = this.mapGrid
+                this.chartOptions.series[0].top = top
+                this.chartOptions.series[0].bottom = bottom
+            }
             return this.chartOptions
         },
         resize() {
